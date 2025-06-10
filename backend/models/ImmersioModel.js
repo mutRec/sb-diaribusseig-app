@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 // Creem un schema per la nostra BBDD MongoDB 'socBalena_app' definida al fitxer .env (Variables d'Entorn).
+// Creo schema Immersio com a nou collection de la BBDD mongoDB.
 const immersioSchema = new mongoose.Schema(
     {
         numimmersio:{
@@ -78,5 +79,5 @@ const immersioSchema = new mongoose.Schema(
     }
 );
 
-// Creem el model a partir de l'schema.
+// Creem el model a partir de l'anterior schema creat.
 export const ImmersioModel = mongoose.model("Immersio", immersioSchema)
