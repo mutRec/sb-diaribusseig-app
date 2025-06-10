@@ -1,0 +1,23 @@
+.sb-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1976d2;
+  padding: 2rem 0 1rem 0;
+  border-radius: 0 0 16px 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+.sb-logo {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0.5rem;
+}
+.sb-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 8px rgba(0,0,0,0.08);
+}

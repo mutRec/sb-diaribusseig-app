@@ -1,0 +1,90 @@
+<form [formGroup]="formImmersio" (ngSubmit)="onSubmit()" class="immersio-form">
+
+  <div class="form-section">
+    <label>
+      Immersió #:
+      <input formControlName="numimmersio" type="number" />
+    </label>
+    <label>
+      Data:
+      <input formControlName="dataimmersio" type="date" />
+    </label>
+    <label>
+      Lloc:
+      <input formControlName="lloc" type="text" />
+    </label>
+    <label>
+      Centre:
+      <input formControlName="centre" type="text" />
+    </label>
+  </div>
+
+  <div class="form-section">
+    <label>
+      Visibilitat:
+      <input formControlName="visibilitat" type="text" />
+    </label>
+    <label>
+      Temp. Aire (ºC):
+      <input formControlName="tempaire" type="number" />
+    </label>
+    <label>
+      Temp. Aigua (ºC):
+      <input formControlName="tempaigua" type="number" />
+    </label>
+    <label>
+      Prof. Màx (m):
+      <input formControlName="profmax" type="number" />
+    </label>
+    <label>
+      Atm. Inicial:
+      <input formControlName="atmini" type="number" />
+    </label>
+    <label>
+      Atm. Final:
+      <input formControlName="atmfinal" type="number" />
+    </label>
+  </div>
+
+  <div class="form-section">
+    <label>
+      Ampolla (L):
+      <input formControlName="ampolla" type="number" />
+    </label>
+    <label>
+      Llast (Kg):
+      <input formControlName="llast" type="number" />
+    </label>
+    <label>
+      Hora entrada:
+      <input formControlName="horaentrada" type="time" />
+    </label>
+    <label>
+      Hora sortida:
+      <input formControlName="horasortida" type="time" />
+    </label>
+    <label>
+      Temps fons (min):
+      <input formControlName="tempsfons" type="number" />
+    </label>
+    <label>
+      Parada seguretat (Si/No):
+      <input formControlName="paradaseguretat" type="text" />
+    </label>
+  </div>
+
+  <div class="form-section">
+    <label>
+      Descripció Immersió:
+      <input formControlName="comentaris" type="text" />
+    </label>
+  </div>
+
+  <div class="form-actions">
+    <button [disabled]="!formImmersio.valid" type="submit">Envia</button>
+    <a routerLink="/main" class="cancel-btn">Cancel·la</a>
+  </div>
+</form>
+
+
+

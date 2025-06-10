@@ -1,0 +1,39 @@
+.main-menu-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #1976d2;
+  border-radius: 10px;
+  background: #f8f9fa;
+  text-align: center;
+}
+.main-menu-title {
+  color: #fff;
+  background: #1976d2;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+.main-menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.main-menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #e3eafc;
+  color: #1976d2;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+.main-menu-link:hover {
+  background: #1976d2;
+  color: #fff;
+}

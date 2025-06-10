@@ -1,0 +1,8 @@
+<div class="edit-registre-container">
+  <h4 class="edit-registre-title">Editar Registre d'Immersió</h4>
+  <app-generic-form
+    *ngIf="model"
+    [modelImmersio]="model"
+    (submitValues)="onSubmit($event)"
+  ></app-generic-form>
+</div>

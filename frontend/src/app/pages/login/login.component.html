@@ -1,0 +1,12 @@
+<div class="login-container">
+  <div class="login-title">Inicia Sessió</div>
+  <form class="login-form" (ngSubmit)="onLogin()">
+    <input type="email" [(ngModel)]="email" name="email" placeholder="Correu-e" required>
+    <input type="password" [(ngModel)]="password" name="password" placeholder="Contrasenya" required>
+    <button type="submit">Entrar</button>
+  </form>
+  <div class="login-register-link">
+    <a routerLink="/register">No tens compte? <span>Registra't aquí</span></a>
+  </div>
+</div>
+<br>

@@ -1,0 +1,20 @@
+export interface Immersio {
+    _id: string,
+    numimmersio: number,
+	dataimmersio: string,
+	lloc: string,
+	centre: string,
+	visibilitat: string,
+	tempaire: number,
+	tempaigua: number,
+	profmax: number,
+	atmini: number,
+	atmfinal: number,
+	ampolla: number,
+	llast: number,
+	horaentrada: string,
+	horasortida: string,
+	tempsfons: number,
+	paradaseguretat: string,
+	comentaris: string
+}

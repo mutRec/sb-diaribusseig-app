@@ -1,0 +1,26 @@
+services:
+  sb-diaribusseig-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sb-diaribusseig-app:1.0
+    container_name: sb-diaribusseig-app
+    ports:
+      - "3000:3000"
+    links:
+      - sb-diaribusseig-db
+  sb-diaribusseig-db:
+    image: mongo:latest 
+    container_name: sb-diaribusseig-db
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=ivanA0Jofre
+    volumes:
+      - ./mongo-data:/data/db                  # son les rutes a on es guarda la BBDD segons
+      # mysql -> /var/lib/mysql                # el tipus de BBDD i contenidor.
+      # postgres -> /var/lib/postgresql/data
+  
+volumes:
+  mongo-data:

@@ -1,0 +1,40 @@
+
+
+<div class="fitxes-container">
+  <h4 class="fitxes-title">Llistat Registres d'Immersions</h4>
+
+
+  <div *ngFor="let immersio of immersions; let i = index" class="fitxa-immersio"  id="top-lista">
+    <div class="fitxa-header">
+      <span><b>#{{immersio.numimmersio}}</b> | {{immersio.dataimmersio}}</span>
+      <span><b>Lloc:</b> {{immersio.lloc}}</span>
+      <span><b>Centre:</b> {{immersio.centre}}</span>
+    </div>
+    <div class="fitxa-body">
+      <div><b>Visibilitat:</b> {{immersio.visibilitat}}</div>
+      <div><b>Temp. Aire:</b> {{immersio.tempaire}} ºC</div>
+      <div><b>Temp. Aigua:</b> {{immersio.tempaigua}} ºC</div>
+      <div><b>Prof. Màx:</b> {{immersio.profmax}} m</div>
+      <div><b>Atm. Inicial:</b> {{immersio.atmini}} Atm</div>
+      <div><b>Atm. Final:</b> {{immersio.atmfinal}} Atm</div>
+      <div><b>Ampolla:</b> {{immersio.ampolla}} L</div>
+      <div><b>Llast:</b> {{immersio.llast}} Kg</div>
+      <div><b>Hora entrada:</b> {{immersio.horaentrada}}</div>
+      <div><b>Hora sortida:</b> {{immersio.horasortida}}</div>
+      <div><b>Temps de fons:</b> {{immersio.tempsfons}} min.</div>
+      <div><b>Parada Seguretat:</b> {{immersio.paradaseguretat}}</div>
+      <div><b>Descripció:</b> {{immersio.comentaris}}</div>
+    </div>
+    <div class="fitxa-actions">
+      <a [routerLink]="'/update/' + immersio._id" class="fitxa-edit-btn"><fa-icon [icon]="faPen"></fa-icon></a>
+      <button (click)="delete(immersio._id, i)" class="fitxa-delete-btn"><fa-icon [icon]="faTrash"></fa-icon></button>
+    </div>
+  </div>
+
+  <div class="fitxes-back">
+    <a routerLink="/main" fragment="top-lista" class="fitxes-back-btn">
+        <fa-icon [icon]="faArrowLeft" [size]="'2x'"></fa-icon>
+    </a>
+  </div>
+</div>
+
