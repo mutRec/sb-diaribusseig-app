@@ -18,9 +18,9 @@ export const registreUsuari = async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
     const user = new UserModel({ email, password: hashedPassword });
     await user.save();
-    res.status(201).json({ message: "Usuari registrat correctament" });
+    res.status(201).json({ message: ":-) Usuari registrat correctament!" });
   } catch (err) {
-    res.status(500).json({ message: "Error al registrar l'usuari" });
+    res.status(500).json({ message: ":-( Error al registrar l'usuari" });
   }
 };
 
