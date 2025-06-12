@@ -9,7 +9,7 @@ import { catchError, map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class CrudService {
-  //private REST_API: string = 'http://sb-diaribusseig.abellot.net/api/immersions';
+  //private REST_API: string = 'https://sb-diaribusseig.abellot.net/api/immersions';
   private REST_API: string = 'http://localhost:3003/api/immersions';
   httpHeaders = new HttpHeaders().set('Content-type','application/json')
 
