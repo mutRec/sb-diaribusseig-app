@@ -23,7 +23,7 @@ export class CreateComponent {
     this.crudService.createImmersio(immersio).subscribe({
       next:()=>{
         this.alertifyService.success("Registre d'Immersió creat correctament!")
-        this.router.navigateByUrl("/")
+        this.router.navigateByUrl("/main")
       },
       error: (error)=>{
         this.alertifyService.error(error)

@@ -3,10 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: sb-diaribusseig-app:1.0
+    image: sb-diaribusseig-app:0.9
     container_name: sb-diaribusseig-app
     ports:
-      - "3000:3000"
+      - "3003:3003"
     links:
       - sb-diaribusseig-db
   sb-diaribusseig-db:

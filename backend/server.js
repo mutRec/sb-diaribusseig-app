@@ -23,6 +23,8 @@ const start = async () => {
         console.log("MongoDB Connected!")
 
         /*
+        // Per producció, si volem fer servir https.
+        app.use("/api/auth", router);
         https
         .createServer(
         {
@@ -35,11 +37,13 @@ const start = async () => {
             console.log(`Server running at port: ${PORT}`);
         })
         */
+       
+        // Per desenvolupament, si no volem fer servir https.
         app.use("/api/auth", router);
         app.listen(PORT, () => {
             console.log(`Server running at port: ${PORT}`);
         })
-
+       
         app.use(express.static('sb-diaribusseig'));
 
     } catch (error) {

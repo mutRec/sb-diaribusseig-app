@@ -16,5 +16,5 @@ COPY backend/ .
 # Copy Angular build to backend public folder (abans era ./public)
 COPY --from=frontend-build /frontend/dist/frontend ./sb-diaribusseig 
 
-EXPOSE 3000
+EXPOSE 3003
 CMD ["node", "server.js"]
