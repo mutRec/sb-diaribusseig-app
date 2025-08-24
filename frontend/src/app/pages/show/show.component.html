@@ -2,8 +2,13 @@
 
 <div class="fitxes-container">
   <h4 class="fitxes-title">Llistat Registres d'Immersions</h4>
-
-
+  
+  <div class="fitxes-back">
+    <a routerLink="/main" fragment="top-lista" class="fitxes-back-btn">
+        <fa-icon [icon]="faArrowLeft" [size]="'2x'"></fa-icon>
+    </a>
+  </div>
+  <br>
   <div *ngFor="let immersio of immersions; let i = index" class="fitxa-immersio"  id="top-lista">
     <div class="fitxa-header">
       <span><b>#{{immersio.numimmersio}}</b> | {{immersio.dataimmersio}}</span>

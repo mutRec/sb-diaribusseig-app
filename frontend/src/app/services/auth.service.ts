@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class AuthService {
   //private API
   //private API_URL = 'https://sb-diaribusseig.abellot.net/api/auth';
-  private API_URL = 'https://localhost:3003/api/auth';
+  private API_URL = 'http://localhost:3003/api/auth';
 
   constructor(private http: HttpClient) { }
 

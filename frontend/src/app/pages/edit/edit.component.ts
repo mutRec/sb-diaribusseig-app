@@ -51,7 +51,7 @@ export class EditComponent implements OnInit {
     this.crudService.updateImmersio(this.id, immersio).subscribe({
       next: ()=>{
         this.alertifyService.success("Registre d'Immersió actualitzat!")
-        this.router.navigateByUrl('/')
+        this.router.navigateByUrl('/main')
       },
       error:(error) =>{
         this.alertifyService.error(error)
