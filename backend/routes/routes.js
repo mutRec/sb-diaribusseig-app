@@ -5,6 +5,9 @@ import { registreUsuari, loginUsuari } from '../controllers/AuthController.js'
 
 const router = express.Router()
 
+// Les rutes les farem servir fent ús de la llibreria express. Les rutes, són com les portes d'entrada per 
+// l'aplicació, és a dir, són com cartells que diuen... si vas per aquí feré aixó, i/o alló. Quan algú fa
+// alguna petició tipus (GET ó POST), la ruta decidirá quina funció s'haurà d'executar.
 router.get("/", getImmersions)
 router.get("/:id", getImmersio)
 router.put("/:id", updateImmersio)

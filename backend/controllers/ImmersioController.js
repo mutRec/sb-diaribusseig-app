@@ -1,8 +1,9 @@
+// Els controladors, són els que fan la feina. És a dir, és on definirem les funcions i implementarem la 
+// lógica. Quan una ruta rep una petició, crida a una funció controller que ferà el que es necessiti: retornar 
+// dades, actualizar dades, eliminar dades...
 import { ImmersioModel } from "../models/ImmersioModel.js";
 
-/*
-TORNA TOTS ELS ELEMENTS
-*/
+// Torna totes les immersions.
 export const getImmersions = async (req, res)=>{
    try {
        const immersio = await ImmersioModel.find()

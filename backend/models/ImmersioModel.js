@@ -1,3 +1,6 @@
+// Fent servir la llibreria mongoose per poder tractar amb BBDD mongo, els models són com les dades que
+// guardarem a la BBDD, és a dir, quina forma tindrán, cóm seràn... és com si el model fós un "motllo" que 
+// farem servir per crear una immersió.
 import mongoose from "mongoose";
 
 // Creem un schema per la nostra BBDD MongoDB 'socBalena_app' definida al fitxer .env (Variables d'Entorn).
