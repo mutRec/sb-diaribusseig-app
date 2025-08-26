@@ -2,6 +2,14 @@
 <header class="sb-header">
   <img src="/assets/socbalenacua.png" alt="Sóc Balena" class="sb-logo">
   <h1 class="sb-title">Sóc Balena - Diari de Busseig</h1>
+  
+  <!-- User info section in top-right corner -->
+  <div class="user-info" *ngIf="userEmail">
+    <span class="user-email">{{ userEmail }}</span>
+    <button class="logout-btn" (click)="logout()" title="Sortir de sessió">
+      <fa-icon [icon]="faSignOutAlt"></fa-icon>
+    </button>
+  </div>
 </header>
 
 <!-- Contingut dinàmic en funció del path on s'apunti (carrega el component/pàgina específica)-->

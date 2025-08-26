@@ -18,7 +18,7 @@ export class LoginComponent {
     this.auth.login({ email: this.email, password: this.password }).subscribe(res => {
       if (res.token) {
         this.auth.setToken(res.token);
-        localStorage.setItem('userEmail', this.email); // Desa l'email
+        this.auth.setUserEmail(this.email); // Desa l'email
         this.router.navigate(['/main']); // Redirigeix a la pàgina principal
       }
     }, err => {

@@ -66,3 +66,22 @@
   text-align: center;
   font-size: 1rem;
 }
+
+.login-register-link {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.login-register-link a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+}
+.login-register-link a span {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.login-register-link a:hover {
+  color: #1252a2;
+}
